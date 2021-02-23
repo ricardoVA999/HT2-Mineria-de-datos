@@ -53,3 +53,14 @@ mean(silch[,3])
 #Fuzzy c-means
 silfcm<-silhouette(fcm$cluster,dist(cuanti_data_movies))
 mean(silfcm[,3])
+
+g1HC<-movies[movies$gruposHC==1,]
+g2HC<-movies[movies$gruposHC==2,]
+g3HC<-movies[movies$gruposHC==3,]
+g4HC<-movies[movies$gruposHC==4,]
+
+summary(g1HC)
+summary(g2HC)
+nrow(g2HC)
+summary(g3HC)
+summary(g4HC)
